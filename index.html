@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-card flat tile color="#623CEA">
+
+        <v-row class="pa-4">
+          <v-col cols="6">
+            <v-row>
+              <v-col cols="2">
+                <v-avatar class="profile" color="grey" size="164">
+                  <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" style="border: 3px solid white;"></v-img>
+                </v-avatar>
+
+              </v-col>
+              <v-col cols="6 pl-12 pt-12">
+                <p class="headline font-weight-bold text-left" style="color: whitesmoke;">David Runchev</p>
+                <p class="text-left"
+                  style="font-family: Circular Std;font-style: normal;font-weight: normal;font-size: 22px;line-height: 33px;color: #FFFFFF;opacity: 0.82">
+                  Visual Designer</p>
+
+                <v-btn class="mx-2" fab outlined dark x-small color="#04C79B">
+                  <v-icon dark color="white">mdi-behance</v-icon>
+                </v-btn>
+
+                <v-btn class="mx-2" fab outlined dark x-small color="#04C79B">
+                  <v-icon dark color="white">mdi-dribbble</v-icon>
+                </v-btn>
+                <v-btn class="mx-2" fab outlined dark x-small color="#04C79B">
+                  <v-icon dark color="white">mdi-instagram</v-icon>
+                </v-btn>
+
+
+              </v-col>
+            </v-row>
+            <v-col cols="12" class="mt-n12  mx-auto">
+              <v-btn color="#04C79B" dark rounded small>
+                <span class="pl-4 pr-4">
+                  TAP TO CHAT
+                </span>
+
+              </v-btn>
+            </v-col>
+
+
+
+
+          </v-col>
+          <v-col cols="6">
+            <v-row no-gutters>
+              <v-col cols="6">
+                <p class="title text-right mt-2 mr-4" style="color: whitesmoke;">Your Interviews :</p>
+              </v-col>
+              <v-col cols="6">
+                <v-btn class="ma-2" outlined color="white" left>
+                  <v-icon left>mdi-volume-high</v-icon>Upload Audio
+                </v-btn>
+                <v-btn class="ma-2" outlined color="white" left>
+                  <v-icon left>ondemand_video</v-icon>Upload Video
+                </v-btn>
+              </v-col>
+              <v-col cols="8" class="mx-auto mr-12">
+                <v-row style="background: rgb(37, 29, 68,0.20);border-radius: 10px;">
+                  <v-col cols="4">
+                    <div class="title text-center" style="color: whitesmoke;">15$</div>
+                    <div class="subtitle-2 text-center" style="color: #FFFFFF;opacity: 0.82">Hourly rate</div>
+                  </v-col>
+                  <v-col cols="4">
+                    <div class="title text-center" style="color: whitesmoke;">40 hours</div>
+                    <div class="subtitle-2 text-center" style="color: #FFFFFF;opacity: 0.82">Weekly Availability</div>
+                  </v-col>
+
+                  <v-col cols="4">
+                    <v-btn dark color="#03CA9F" large width="100%" class="ma-auto">Hire Me</v-btn>
+                  </v-col>
+                </v-row>
+
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+
+
+
+
+
+        <v-row no-gutters class="justify-center">
+          <v-col cols="8">
+            <v-tabs v-model="tab" background-color="deep-purple accent-4" centered grow dark text>
+              <v-tabs-slider></v-tabs-slider>
+
+              <v-tab href="#tab-1">
+                <v-icon left color="#04C79B">layers</v-icon>
+                Portfolio
+              </v-tab>
+
+              <v-tab href="#tab-2">
+                <v-icon left>mdi-briefcase</v-icon>
+                Work
+              </v-tab>
+
+              <v-tab href="#tab-3">
+                <v-icon left>mdi-school</v-icon>
+                Education
+              </v-tab>
+            </v-tabs>
+          </v-col>
+        </v-row>
+      </v-card>
+
+      <v-row class="justify-center">
+        <v-col cols="8" class="elevation-12"
+          style="height:80px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">
+          <v-row>
+            <v-col cols="3">
+              <div class="text-center">Programing Languages</div>
+            </v-col>
+            <v-col cols="3">
+              <div class="text-center">Frameworks/Databases</div>
+              <span
+                style="position: absolute; left: 37.50%;right: 54.50%;top: 38.5%; bottom: 60.50%;background: #03CA9F;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);mix-blend-mode: normal;"></span>
+
+
+
+            </v-col>
+            <v-col cols="3">
+              <div class="text-center">Software</div>
+            </v-col>
+            <v-col cols="3">
+              <div class="text-center">Design Skills</div>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+      <v-container>
+
+        <v-row class="justify-center">
+          <v-col cols="8">
+            <v-row>
+              <v-col cols="3">
+                <v-row class="justify-end">
+                  <v-col cols="3">
+                    <v-img src="../vue_front/assests/616px-Adobe_Illustrator_CC_icon.svg.png"></v-img>
+                  </v-col>
+                  <v-col cols="6">
+                    <div class="text-left">Illustrator</div>
+                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                  </v-col>
+                  <v-col cols="2 mt-3 mr-0">
+                    <span class="text-center">50%</span>
+                  </v-col>
+                </v-row>
+
+
+
+              </v-col>
+              <v-col cols="3">
+
+                <v-row class="justify-end">
+                  <v-col cols="3">
+                    <v-img src="../vue_front/assests/1050px-Adobe_XD_CC_icon.svg.png"></v-img>
+                  </v-col>
+                  <v-col cols="6">
+                    <div class="text-center">Adobe XD</div>
+                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                  </v-col>
+                  <v-col cols="2 mt-3 mr-0">
+                    <span class="text-center">50%</span>
+                  </v-col>
+                </v-row>
+
+
+
+
+
+
+              </v-col>
+              <v-col cols="3">
+                <v-row class="justify-end">
+                  <v-col cols="3">
+                    <v-img src="../vue_front/assests/photoshop-logo-png-open-2000.png"></v-img>
+                  </v-col>
+                  <v-col cols="6">
+                    <div class="text-center">Photoshop</div>
+                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                  </v-col>
+                  <v-col cols="2 mt-3 mr-0">
+                    <span class="text-center">50%</span>
+                  </v-col>
+                </v-row>
+
+
+              </v-col>
+              <v-col cols="3">
+                <v-row class="justify-end">
+                  <v-col cols="3">
+                    <v-img src="../vue_front/assests/adobe-premiere-pro-logo-3.png"></v-img>
+                  </v-col>
+                  <v-col cols="6">
+                    <div class="text-center">Premiere Pro</div>
+                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                  </v-col>
+                  <v-col cols="2 mt-3 mr-0">
+                    <span class="text-center">50%</span>
+                  </v-col>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
+      <v-tabs-items v-model="tab">
+        <v-tab-item value="tab-1">
+          <v-card flat>
+            <v-card-text>asdasdad</v-card-text>
+          </v-card>
+        </v-tab-item>
+        <v-tab-item value="tab-2">
+          <v-card flat>
+            <v-card-text>asd</v-card-text>
+          </v-card>
+        </v-tab-item>
+        <v-tab-item value="tab-3">
+          <v-card flat>
+            <v-card-text>werwr</v-card-text>
+          </v-card>
+        </v-tab-item>
+      </v-tabs-items>
+
+      </v-content>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          tab: null,
+          text: ['',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'asdasdasdasd',]
+        }
+      },
+      vuetify: new Vuetify(),
+    })
+  </script>
+
+
+</body>
+
+</html>
