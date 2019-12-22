@@ -19,7 +19,8 @@
             <v-row>
               <v-col cols="2">
                 <v-avatar class="profile" color="grey" size="164">
-                  <v-img src="https://cdn.vuetifyjs.com/images/john.jpg" style="border: 3px solid white;"></v-img>
+                  <v-img src="../vue_front/assests/man-crossed-arms-1516680.jpg" style="border: 3px solid white;">
+                  </v-img>
                 </v-avatar>
 
               </v-col>
@@ -51,10 +52,6 @@
 
               </v-btn>
             </v-col>
-
-
-
-
           </v-col>
           <v-col cols="6">
             <v-row no-gutters>
@@ -89,11 +86,6 @@
             </v-row>
           </v-col>
         </v-row>
-
-
-
-
-
         <v-row no-gutters class="justify-center">
           <v-col cols="8">
             <v-tabs v-model="tab" background-color="deep-purple accent-4" centered grow dark text>
@@ -128,12 +120,9 @@
             <v-col cols="3">
               <div class="text-center">Frameworks/Databases</div>
               <span
-                style="position: absolute; left: 37.50%;right: 54.50%;top: 38.5%; bottom: 60.50%;background: #03CA9F;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);mix-blend-mode: normal;"></span>
-
-
-
+                style="position: absolute; left: 37.50%;right: 54.50%;top: 36.5%; bottom: 62.70%;background: #03CA9F;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);mix-blend-mode: normal;border-top-left-radius: 50%;border-top-right-radius: 50%;"></span>
             </v-col>
-            <v-col cols="3">
+            <v-col cols=" 3">
               <div class="text-center">Software</div>
             </v-col>
             <v-col cols="3">
@@ -143,7 +132,6 @@
         </v-col>
       </v-row>
       <v-container>
-
         <v-row class="justify-center">
           <v-col cols="8">
             <v-row>
@@ -154,36 +142,26 @@
                   </v-col>
                   <v-col cols="6">
                     <div class="text-left">Illustrator</div>
-                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                    <v-progress-linear rounded value="90" color="#623CEA"></v-progress-linear>
                   </v-col>
                   <v-col cols="2 mt-3 mr-0">
-                    <span class="text-center">50%</span>
+                    <span class="text-center subtitle-2">90%</span>
                   </v-col>
                 </v-row>
-
-
-
               </v-col>
               <v-col cols="3">
-
                 <v-row class="justify-end">
                   <v-col cols="3">
                     <v-img src="../vue_front/assests/1050px-Adobe_XD_CC_icon.svg.png"></v-img>
                   </v-col>
                   <v-col cols="6">
                     <div class="text-center">Adobe XD</div>
-                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                    <v-progress-linear rounded value="70" color="#623CEA"></v-progress-linear>
                   </v-col>
                   <v-col cols="2 mt-3 mr-0">
-                    <span class="text-center">50%</span>
+                    <span class="text-center subtitle-2">70%</span>
                   </v-col>
                 </v-row>
-
-
-
-
-
-
               </v-col>
               <v-col cols="3">
                 <v-row class="justify-end">
@@ -192,14 +170,12 @@
                   </v-col>
                   <v-col cols="6">
                     <div class="text-center">Photoshop</div>
-                    <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
+                    <v-progress-linear rounded value="95" color="#623CEA"></v-progress-linear>
                   </v-col>
                   <v-col cols="2 mt-3 mr-0">
-                    <span class="text-center">50%</span>
+                    <span class="text-center subtitle-2">95%</span>
                   </v-col>
                 </v-row>
-
-
               </v-col>
               <v-col cols="3">
                 <v-row class="justify-end">
@@ -211,7 +187,7 @@
                     <v-progress-linear rounded value="50" color="#623CEA"></v-progress-linear>
                   </v-col>
                   <v-col cols="2 mt-3 mr-0">
-                    <span class="text-center">50%</span>
+                    <span class="text-center subtitle-2">50%</span>
                   </v-col>
                 </v-row>
               </v-col>
@@ -221,9 +197,64 @@
       </v-container>
       <v-tabs-items v-model="tab">
         <v-tab-item value="tab-1">
-          <v-card flat>
-            <v-card-text>asdasdad</v-card-text>
-          </v-card>
+          <v-container>
+            <v-row class="justify-center">
+              <v-col cols="3">
+                <v-card elevation="8">
+                  <div style="padding:10px 10px;">
+                    <v-img src="../vue_front/assests/Screenshot_1.png"
+                      style="border-radius: 10px;box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.161);">
+                    </v-img>
+                  </div>
+                  <v-row class="justify-between">
+                    <v-col cols="10">
+                      <v-card-title>Product Designer</v-card-title>
+                      <v-card-subtitle>insdrurial, creative, idea</v-card-subtitle>
+                    </v-col>
+                    <v-col cols="2">
+                      <v-icon color="#623CEA" large class="mt-6 mr-4">open_in_new</v-icon>
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <v-card elevation="8">
+                  <div style="padding:10px 10px;">
+                    <v-img src="../vue_front/assests/d2a.jpg"
+                      style="border-radius: 10px;box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.161);">
+                    </v-img>
+                  </div>
+                  <v-row class="justify-between">
+                    <v-col cols="10">
+                      <v-card-title>Website Design</v-card-title>
+                      <v-card-subtitle>insdrurial, creative, idea</v-card-subtitle>
+                    </v-col>
+                    <v-col cols="2">
+                      <v-icon color="#623CEA" large class="mt-6 mr-4">open_in_new</v-icon>
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+              <v-col cols="3">
+                <v-card elevation="8">
+                  <div style="padding:10px 10px;">
+                    <v-img src="../vue_front/assests/image_processing20191208-15422-1m97ypn.png"
+                      style="border-radius: 10px;box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.161);">
+                    </v-img>
+                  </div>
+                  <v-row class="justify-between">
+                    <v-col cols="10">
+                      <v-card-title>Dashboard Designer</v-card-title>
+                      <v-card-subtitle>unique, modern, idea</v-card-subtitle>
+                    </v-col>
+                    <v-col cols="2">
+                      <v-icon color="#623CEA" large class="mt-6 mr-4">open_in_new</v-icon>
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
         <v-tab-item value="tab-2">
           <v-card flat>
