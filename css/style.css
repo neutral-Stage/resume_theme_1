@@ -21,3 +21,30 @@
     display: flex;
     padding-bottom: 6px;
 }
+.mainPoint{
+margin-left: 10px;
+    height: 5px;
+    border-radius: 15px;
+    width: 40px;
+    background-color:#03CA9F;
+}
+
+.mainPoint::before{
+    content: '';
+    display: block;
+
+ 
+    margin-left: 50px;
+    height: 5px;
+    border-radius: 15px;
+    width: 20px;
+    background-color:#03CA9F;
+}
+
+.lilPoint{
+margin-left: 100px;
+    height: 5px;
+    border-radius: 15px;
+    width: 40px;
+    background-color:#03CA9F;
+}
