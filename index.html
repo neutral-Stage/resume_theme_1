@@ -6,6 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="../vue_front/css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 
@@ -257,20 +258,79 @@
           </v-container>
         </v-tab-item>
         <v-tab-item value="tab-2">
-          <v-card flat>
-            <v-card-text>asd</v-card-text>
-          </v-card>
+          <v-container>
+            <v-row>
+              <v-col cols="12">
+                <p class="display-2" style="color: #623CEA;">Work</p>
+              </v-col>
+              <v-col cols="12">
+                <v-timeline align-top dense class="large_dot">
+                  <v-timeline-item fill-dot large color="white" icon-color="#623CEA" icon="mdi-package-variant">
+                    <p class="title mt-3">Product Designer</p>
+                  </v-timeline-item>
+                  <v-timeline-item right fill-dot color="#623CEA" small>
+                    <div class="subtitle-2">Gps Bangla</div>
+                    <div class="subtitle-2">Jan 2017 - Feb 2019</div>
+                  </v-timeline-item>
+                  <v-timeline-item right fill-dot color="#623CEA" small>
+                    <div class="subtitle-2">
+                      Lorem ipsum dolor sit amet, consetetur
+                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                      Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </div>
+                  </v-timeline-item>
+                  <v-timeline-item right fill-dot color="#623CEA" small></v-timeline-item>
+
+                </v-timeline>
+              </v-col>
+              <v-col cols="12"></v-col>
+
+            </v-row>
+          </v-container>
         </v-tab-item>
         <v-tab-item value="tab-3">
-          <v-card flat>
-            <v-card-text>werwr</v-card-text>
-          </v-card>
+          <v-container>
+            <v-row>
+              <v-col cols="12">
+                <p class="display-2" style="color: #623CEA;">Education</p>
+              </v-col>
+              <v-col cols="12">
+                <v-timeline align-top dense class="large_dot">
+                  <v-timeline-item fill-dot large color="white" icon-color="#623CEA" icon="mdi-package-variant">
+                    <p class="title mt-3">Product Designer</p>
+                  </v-timeline-item>
+                  <v-timeline-item right fill-dot color="#623CEA" small>
+                    <div class="subtitle-2">Gps Bangla</div>
+                    <div class="subtitle-2">Jan 2017 - Feb 2019</div>
+                  </v-timeline-item>
+                  <v-timeline-item right fill-dot color="#623CEA" small>
+                    <div class="subtitle-2">
+                      Lorem ipsum dolor sit amet, consetetur
+                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                      Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </div>
+                  </v-timeline-item>
+                  <v-timeline-item right fill-dot color="#623CEA" small></v-timeline-item>
+
+                </v-timeline>
+              </v-col>
+              <v-col cols="12"></v-col>
+
+            </v-row>
+          </v-container>
         </v-tab-item>
       </v-tabs-items>
 
       </v-content>
+
     </v-app>
+
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
