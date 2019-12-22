@@ -2,7 +2,7 @@
   .large_dot:before{
     bottom: 0;
     content: "";
-    height: 150px;
+    height: 160px;
     position: absolute;
     top: 100px;
     width: 2px;
@@ -42,9 +42,29 @@ margin-left: 10px;
 }
 
 .lilPoint{
-margin-left: 100px;
+margin-left: 90px;
     height: 5px;
     border-radius: 15px;
     width: 40px;
     background-color:#03CA9F;
+    margin-top: -5px;
+}
+.v-tab--active{
+    background-color:#FAFAFA;
+    color:#000 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.v-tab--active .v-icon{
+    color:#03CA9F;
+}
+
+.v-tabs-slider-wrapper{
+   display: none !important;
+}
+.theme--dark.v-tabs .v-tab:hover:before {
+    opacity: .08;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
